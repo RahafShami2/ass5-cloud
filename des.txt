@@ -1,0 +1,24 @@
+In the first image : 
+-> after wrote the code of database in "Dockerfile" & "newsdb.sql" files 
+-> using "docker build -t articles ." command to build the mysql image
+-> using "docker run -d --name articles -p 3306:3306 articles" command to run the mysql container
+-> using "docker container ls" command to show all of the containers
+-> put the port 3306 in the chrome to test it 
+ps: we can run the container using "docker run articles" just , and the port num is defult 3306 for the database
+
+In the second image :
+-> after wrote the code of backend in "backend.Dockerfile" & "nbackend.js" files 
+-> install the npm by using "npm init" command .... install the package.json
+-> using "docker build -t articlesbackend -f backend.Dockerfile ." command to build the backend image
+-> using "docker run -d --name back -p 3000:3000 articles" command to run the mysql container
+-> using "docker container ls" command to show all of the containers
+-> put the port 3000 in the chrome to test it 
+
+In the third image :
+-> after wrote the code of frontend in "frontend.Dockerfile" file & "front" directory
+-> using "build -t articles -f frontend.Dockerfile ." command to build the frontend image
+-> using "docker run -d --name front -p 8080:80 articles" command to run the mysql container
+-> using "docker container ls" command to show all of the containers
+-> put the port 8080:80 with the /getUrgentNews in the chrome to retrieves the news articles from the database
+
+**: the defult port number of   mysql: 3306             node js: 3000                html: 80
