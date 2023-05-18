@@ -22,3 +22,4 @@ In the third image :
 -> put the port 8080:80 with the /getUrgentNews in the chrome to retrieves the news articles from the database
 
 **: the defult port number of   mysql: 3306             node js: 3000                html: 80
+*: the front directory it is conains the "front.css" & "front.html" & "front.js" files
